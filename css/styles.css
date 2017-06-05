@@ -230,22 +230,6 @@ table caption {
 	color: #fff;
 }
 
-a.button {
-	text-decoration: none;
-	padding: .5em;
-	margin: 0 .5em .5em 0;
-	border-radius: 10px;
-}
-
-a.button::before {
-	color: #fff;
-}
-
-.button.big {
-	margin: 20px;
-	padding: 20px 50px;
-}
-
 .button-white-blue {
     background: transparent;
 	border: 2px solid #fff;
