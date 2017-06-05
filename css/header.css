@@ -8,7 +8,8 @@
 }
 
 .header-background {
-  background: #303539 url(http://www.tokyobigpicture.com/wp-content/uploads/2012/03/ochanomizu-bridge.jpg);
+  background-color: #303539;
+  background-image: url('../img/background.jpg');
   background-size: cover;
   background-position: center center;
   position: absolute;
@@ -17,6 +18,12 @@
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .header-background {
+    background-image: url('../img/background-768.jpg');
+  }
 }
 
 .header-mask {
