@@ -1,3 +1,8 @@
+function nl2br (str, is_xhtml) {
+    var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+    return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+}
+
 window.onload = function() {
     var lang = document.getElementsByTagName("html")[0].getAttribute('lang') || 'en';
     
@@ -5,11 +10,11 @@ window.onload = function() {
     switch(lang) {
         case 'fr':
             text = {
-                sent: function(response) {
-                    return 'Le message est bien envoyé (Réponse du script : ' + response + ')';
+                sent: function() {
+                    return 'Le message est bien envoyé !';
                 },
                 notSent: function(response, status) {
-                    return 'Erreur d\'envoi. (Réponse du script : ' + response + '<br/>Code : ' + status + ')';
+                    return 'Erreur d\'envoi. Contactez-moi sur les réseaux sociaux.';
                 },
                 valid: 'Ok',
                 invalidMail: "L'adresse mail n'est pas valide.",
@@ -18,11 +23,11 @@ window.onload = function() {
             break;
         default:
             text = {
-                sent: function(response) {
-                    return 'Message has been sent (Script\'s response : ' + response + ')';
+                sent: function() {
+                    return 'Message has been sent!';
                 },
                 notSent: function(response, status) {
-                    return 'Erreur d\'envoi. (Script\'s response : ' + response + '<br/>Code : ' + status + ')';
+                    return 'Error when sending. Contact me on social networks.';
                 },
                 valid: 'Ok',
                 invalidMail: "Email address is not valid.",
@@ -32,33 +37,41 @@ window.onload = function() {
     }
     
 	var form = document.getElementById("form_contact");
-	form.onsubmit = function() {
-		var xhr = new XMLHttpRequest();
-	 
-		xhr.open('POST', 'contact.php');
+	form.onsubmit = function(e) {
+    var status = document.getElementById('status');
+    status.style.display = 'none';
+    
+    if (!window.fetch) {
+      e.target.action = 'https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf';
+      
+      e.target.name.name = 'value1';
+      e.target.mail.name = 'value2';
+      e.target.message.name = 'value3';
 
-		var data = new FormData(form);
-		data.append('ajax', true);
-		
-		xhr.onreadystatechange = function() {
-			if(xhr.readyState == 4) {
-				var data = xhr.responseText;
-				var status = document.getElementById('status');
-				status.style.display = '';
-				
-				if(xhr.status != 200) {
-					status.innerHTML = text.notSent(xhr.responseText, xhr.status);
-				}
-				else {
-					status.innerHTML = text.sent(xhr.responseText);
-					form.reset();
-				}
-			}
-		};
-		 
-		xhr.send(data);
-		
-		return false;
+      return;
+    }
+    
+    e.preventDefault();
+    
+    var data = new FormData();
+    
+    data.append('value1', e.target.name.value);
+    data.append('value2', e.target.mail.value);
+    data.append('value3', nl2br(e.target.message.value));
+    
+    fetch('https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: data,
+    }).then(d => {
+			status.style.display = '';
+      status.innerHTML = text.sent();
+      form.reset();
+    }, e => {
+			status.style.display = '';
+      status.innerHTML = text.notSent();
+    });
+
 	};
 	
 	var name = document.getElementById("name");
