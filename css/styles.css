@@ -1,0 +1,339 @@
+/* Positions */
+
+* {
+	z-index: 1;
+}
+
+#header {
+	position: fixed;
+	height: 80px;
+	z-index: 10;
+}
+
+#header * {
+	height: 100%;
+	vertical-align: middle;
+}
+
+#header nav {
+	display: inline-block;
+	float: right;
+}
+
+#header nav select { /* Mobile selection */
+	display: none;
+}
+
+#header nav ul li {
+	margin: 0 -2px;
+	display: inline-block;
+}
+
+#header nav ul li a {
+	outline: none;
+}
+
+#header a {
+	padding: 20px;
+	display: block;
+	line-height: 40px;
+}
+
+#header + * { /* Next sibling to header */
+	padding-top: 80px;
+}
+
+section {
+	min-height: 600px;
+}
+
+.snapshot {
+	padding: 10px;
+}
+
+.photo {
+	margin: 10px auto;
+}
+
+.project {
+	margin: 10px 0;
+}
+
+.project > * {
+	margin: 10px;
+}
+
+#legends {
+	text-align: center;
+}
+
+#legends > * {
+	margin: 5px;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+#header .languages a {
+    line-height: normal;
+    padding: 10px;
+    height: 50%;
+}
+
+@media (max-width: 1040px) {
+	#header a {
+		padding: 20px 10px;
+		display: block;
+		line-height: 40px;
+	}
+	
+	#header nav ul {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	#header {
+		position: relative;
+		height: auto;
+	}
+
+	#header nav {
+		display: inline-block;
+		float: none;
+	}
+	
+	#header nav ul {
+		display: none;
+	}
+  
+	#header nav select { 
+		display: inline-block;
+		float: right;
+	}
+	
+	#header a {
+		padding: 5px;
+		line-height: 100%;
+	}
+
+	#header + * { /* Next sibling to header */
+		padding-top: 0;
+	}
+    
+    #header .languages a {
+        padding: 5px;
+        height: auto;
+        display: inline;
+    }
+}
+
+/* Design */
+
+body {
+	background: #eee;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1 a {
+	background: #10afff;
+	color: #fff;
+}
+
+#header {
+	background: #eee;
+	box-shadow: 0 0 18px 0 #888;
+}
+
+#header nav ul li a {
+	transition: all 0.3s ease-in 0s;
+	color: #aaa;
+}
+
+#header nav ul li a.active, #header nav ul li a:hover {
+	background: #10afff;
+	color: #fff;
+}
+
+.snapshot {
+	background: #fff;
+	box-shadow: 0 0 5px #555;
+}
+
+.photo {
+	width: 200px;
+}
+
+.project {
+	background: #ccc;
+	background-clip: content-box;
+}
+
+#projects .game, #legends .game {
+	background: #8be;
+	background-clip: content-box;
+}
+
+#projects .website, #legends .website {
+	background: #be2;
+	background-clip: content-box;
+}
+
+#legends > * {
+	background-clip: padding-box !important;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid {
+	box-shadow: none;
+	outline: none;
+	/*border-bottom-color: red;*/
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+textarea:valid {
+	border-bottom-color: #40FF40;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #eee;
+	color: #fff;
+}
+
+input[type="submit"] {
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+
+
+select {
+	border: none;
+	padding: 2px;
+}
+
+table {
+	background: #fff;
+	color: #333;
+}
+
+table caption {
+	color: #fff;
+}
+
+a.button {
+	text-decoration: none;
+	padding: .5em;
+	margin: 0 .5em .5em 0;
+	border-radius: 10px;
+}
+
+a.button::before {
+	color: #fff;
+}
+
+.button.big {
+	margin: 20px;
+	padding: 20px 50px;
+}
+
+.button-white-blue {
+    background: transparent;
+	border: 2px solid #fff;
+    transition: all .4s ease-out 0s;
+    color: #fff;
+}
+
+.button-white-blue:hover, .button-white-blue:focus {
+    transition: all .4s ease-in 0s;
+    background: #fff;
+    color: #008fff;
+}
+
+.error::before, .error::after {color: #ff4040;}
+.valid::before, .valid::after {color: #40ff40;}
+
+/* Fonts */
+
+body * {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#header h1 a {
+	font-family: "Fredericka the Great", cursive;
+	font-size: 3em;
+}
+
+h2, h3 {
+	font-weight: 300;
+}
+
+#header nav ul li a {
+	font-variant: small-caps;
+	font-size: 1.5em;
+}
+
+.slide h2 {
+	font-size: 5em;
+	font-family: "Fredericka the Great", cursive;
+}
+
+.slide h3 {
+	font-size: 3em;
+}
+
+.project h3 {
+	font-size: 2em;
+}
+
+@media (max-width: 940px) {
+	#header h1 a {
+		font-size: 1.5em;
+	}
+	
+	#header nav ul li a {
+		font-variant: small-caps;
+		font-size: 1.2em;
+	}
+	
+	.slide h2 {
+		font-size: 2em;
+	}
+
+	.slide h3 {
+		font-size: 1.2em;
+	}
+}
+
+/* Slides colors */
+
+#introduce-myself {
+	background: #10afff;
+	color: #fff;
+}
+
+#skills {
+	background: #22b14c;
+	color: #fff;
+}
+
+#experiences {
+	background: #e6e6e6;
+	color: #333;
+}
+
+#get-in-touch {
+	background: #00142D;
+	color: #fff;
+}
