@@ -59,6 +59,7 @@
 }
 
 .avatar-img {
+  max-width: 170px;
   display: block;
   border-radius: 5px;
 }
