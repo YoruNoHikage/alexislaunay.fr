@@ -1,10 +1,11 @@
-
- @import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round');
 .header {
   position: relative;
-  padding: 120px 0;
   font-family: 'Open Sans', sans-serif;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .header-background {
@@ -105,6 +106,20 @@
   
 }
 
+.header-meta-location {
+  color: #aaa;
+  float: right;
+  font-size: 12px;
+}
+
+.header-meta-location-icon {
+  vertical-align: bottom;
+}
+
+.header-meta-location-link {
+  font-size: inherit;
+}
+
 .link {
   color: inherit;
   text-decoration: underline;
@@ -128,4 +143,8 @@
 .button:hover {
   background: white;
   color: #222;
+}
+
+.icon {
+  fill: currentColor;
 }

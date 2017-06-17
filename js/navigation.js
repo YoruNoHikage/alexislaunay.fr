@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$('#header ul li a').click(function(){  
 		var href = $(this).attr("href");
 		$('html, body').animate({
-			scrollTop:$(href).offset().top - parseInt($('#header').css('height'))
+			scrollTop:$(href).offset().top
 		}, 'slow');
 		return false;
 	});
@@ -13,11 +13,9 @@ $(document).ready(function(){
 	/* To change the nav menu */
 	$('.slide').each(function(i) {
 		var position = $(this).position();
-		//console.log(position);
-		console.log('min: ' + (position.top - parseInt($('#header').css('height')) - 1) + ' / max: ' + parseInt(position.top + $(this).height() - $('#header').height() / 2 - 1));
 		$(this).scrollspy({
-			min: position.top - $('#header').height() - 1,
-			max: position.top + $(this).height() - $('#header').height() / 2 - 1,
+			min: position.top - 1,
+			max: position.top + $(this).height() - 1,
 			onEnter: function(element, position) {
 				$("header nav ul li a[href=#" + element.id + "]").attr('class', 'active');
 			},
