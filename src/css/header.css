@@ -1,0 +1,150 @@
+.header {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header-background {
+  background-color: #303539;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .header-background {
+    background-image: url('../images/background-768.jpg');
+  }
+}
+
+.header-mask {
+  background: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.header-content {
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    display: block;
+  }
+}
+
+.header-left,
+.header-right {
+  align-self: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  border: 5px solid white;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+.avatar-img {
+  max-width: 170px;
+  display: block;
+  border-radius: 5px;
+}
+
+.social {
+  margin: 20px auto;
+}
+
+.social a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-link svg {
+  height: 32px;
+  fill: white;
+}
+
+.header-right-title {
+  min-height: 170px;
+}
+
+.header-right-title-title {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 72px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-right-title-subtitle {
+  font-size: 16px;
+  margin: 0;
+}
+
+.header-right-buttons {
+}
+
+.header-meta-location {
+  color: #aaa;
+  float: right;
+  font-size: 12px;
+}
+
+.header-meta-location-icon {
+  vertical-align: bottom;
+}
+
+.header-meta-location-link {
+  font-size: inherit;
+}
+
+.link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.button:hover {
+  background: white;
+  color: #222;
+}
+
+.icon {
+  fill: currentColor;
+}
