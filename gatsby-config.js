@@ -26,6 +26,17 @@ module.exports = {
         icon: `src/images/me.jpg`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        prettier: true,         // use prettier to format JS code output (default)
+        svgo: true,             // use svgo to optimize SVGs (default)
+        svgoConfig: {
+          removeViewBox: false,
+          cleanupIDs: true,    // remove unused IDs and minify remaining IDs (default)
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

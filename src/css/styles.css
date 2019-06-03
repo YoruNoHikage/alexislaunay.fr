@@ -244,7 +244,13 @@ table caption {
 
 /* Fonts */
 
-body * {
+html {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body h1, body h2, body h3, body p, body div, body span, body input, body label, body button, body textarea {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -252,7 +258,8 @@ body * {
 
 #header h1 a {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 3em;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 h2,
@@ -276,6 +283,7 @@ h3 {
 
 .project h3 {
   font-size: 2em;
+  font-weight: 200;
 }
 
 @media (max-width: 940px) {
@@ -299,16 +307,6 @@ h3 {
 
 /* Slides colors */
 
-#introduce-myself {
-  background: #10afff;
-  color: #fff;
-}
-
-#skills {
-  background: #22b14c;
-  color: #fff;
-}
-
 #experiences {
   background: #e6e6e6;
   color: #333;
@@ -316,5 +314,10 @@ h3 {
 
 #get-in-touch {
   background: #00142d;
+  color: #fff;
+}
+
+#illustration {
+  background: #eee;
   color: #fff;
 }

@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -66,10 +66,10 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-      <script src="/js/jquery-scrollspy.js"></script>
-      <script src="/js/navigation.js"></script>
-      <script src="/js/form.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js" />
+      <script src="/js/jquery-scrollspy.js" />
+      <script src="/js/navigation.js" />
+      <script src="/js/form.js" />
       <script>
         {`(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

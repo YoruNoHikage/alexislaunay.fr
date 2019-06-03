@@ -1,13 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Animation from "../components/animation"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Animation from '../components/animation'
+import Illustration from '../components/illustration'
 
-import "../css/knacss.css"
-import "../css/header.css"
-import "../css/styles.css"
+import '../css/knacss.css'
+import '../css/header.css'
+import '../css/styles.css'
 
 const IndexPage = () => (
   <Layout>
@@ -120,11 +121,11 @@ const IndexPage = () => (
           <div className="header-right-title">
             <p className="header-right-title-title">Hello,</p>
             <p className="header-right-title-subtitle">
-              I am <span itemProp="name">Alexis Launay</span>,{" "}
+              I am <span itemProp="name">Alexis Launay</span>,{' '}
               <span itemProp="jobTitle">web &amp; game developer</span>.
             </p>
             <p className="header-right-title-subtitle">
-              I do web stuff at {" "}
+              I do web stuff at{' '}
               <a className="link" href="https://inyo.me">
                 Inyo
               </a>
@@ -163,7 +164,7 @@ const IndexPage = () => (
               xmlSpace="preserve"
             >
               <path d="M36.68,0C16.457,0,0,16.454,0,36.678c0,26.153,31.386,60.164,32.724,61.597    c1.021,1.1,2.453,1.726,3.956,1.726c1.499,0,2.931-0.625,3.955-1.726c1.338-1.432,32.725-35.444,32.725-61.597    C73.359,16.453,56.903,0,36.68,0z M22.202,35.523c0-7.998,6.482-14.482,14.478-14.482c7.996,0,14.478,6.482,14.478,14.482    c0,7.996-6.481,14.478-14.478,14.478C28.685,50,22.202,43.518,22.202,35.523z" />
-            </svg>{" "}
+            </svg>{' '}
             Ochanomizu, Tokyo
           </a>
         </div>
@@ -182,67 +183,103 @@ const IndexPage = () => (
             <div className="project pas website">
               <h3>Inyo</h3>
               <p>
-                During <a href="https://www.techstars.com/programs/paris-program/">TechStars Paris</a>'s acceleration program, we built{' '}
+                During{' '}
+                <a href="https://www.techstars.com/programs/paris-program/">
+                  TechStars Paris
+                </a>
+                's acceleration program, we built{' '}
                 <a
                   href="https://inyo.me"
                   title="Smart Assistant for freelancers"
                 >
                   Inyo
                 </a>
-                . It's a tool to ease the communication between a freelancer and their client.
+                . It's a tool to ease the communication between a freelancer and
+                their client.
               </p>
             </div>
             <div className="project pas website">
-          <h3>Prototypo</h3>
-          <p>
-            As always fascinated by graphics design, I worked on{' '}
-            <a href="https://prototypo.io" title="Create easily your own typefaces">Prototypo</a>.
-            It's a typedesign tool that can help you build the font you want et the technology behind enables us to showcase interactive visual experiments.
-          </p>
-        </div>
-        <div className="project pas game">
-          <h3>Brezeliad : A Tale of Brocéliande</h3>
-          <p>
-            It has been promoted in <a href="http://stunfest.fr" title="Video games festival in Rennes, France">Stunfest 2014</a>. Made in C++ with SFML 2.1, it's about local history from where I was born. <br />
-            More informations on the <a href="http://brezeliad.yorunohikage.fr">website's game</a>.
-          </p>
-        </div>
-        <div className="project pas game">
-          <h3>SamsarA</h3>
-          <p>
-            Game made in 2014 during Global Game Jam (video game making in 48 hours). This game is a concept in which the player moves towards blindly in his memory and must guide himself to some points. It was made in C++ with SFML 2.1.
-          </p>
-        </div>
-        <div className="project pas game">
-          <h3>Heart of Jump</h3>
-          <p>
-            Game made in 2013 during Global Game Jam (contest to create a video game in 48 hours). This game is mixing rythm and runner game. It has been
-            made in C++ with SFML 2.0.
-          </p>
-        </div>
-        <div className="project pas website">
-          <h3>JeuxAmateurs.fr</h3>
-          <p>
-            French website about video games made by people during their free time. Currently, this website is frozen but a new version is coming.
-          </p>
-        </div>
-        <div className="project pas game">
-          <h3>8-Bit Robot Music Party</h3>
-          <p>
-            Game made in 2011 during highschool in a contest organised by engineer school EFREI. It mixes rythm and platforms game. With
-            it, we won 3 prizes : <strong>2<sup>nd</sup> place in Software</strong> category, <strong>Favorite</strong> prize
-            and <strong>Special</strong> prize.
-          </p>
-        </div>
-        <div className="project pas">
-          <h3>What's next ?</h3>
-          <p>
-            Interested in visual experiments and interactivity. Teach and train people with things I know motivates me too!
-          </p>
-        </div>
-
+              <h3>Prototypo</h3>
+              <p>
+                As always fascinated by graphics design, I worked on{' '}
+                <a
+                  href="https://prototypo.io"
+                  title="Create easily your own typefaces"
+                >
+                  Prototypo
+                </a>
+                . It's a typedesign tool that can help you build the font you
+                want et the technology behind enables us to showcase interactive
+                visual experiments.
+              </p>
+            </div>
+            <div className="project pas game">
+              <h3>Brezeliad : A Tale of Brocéliande</h3>
+              <p>
+                It has been promoted in{' '}
+                <a
+                  href="http://stunfest.fr"
+                  title="Video games festival in Rennes, France"
+                >
+                  Stunfest 2014
+                </a>
+                . Made in C++ with SFML 2.1, it's about local history from where
+                I was born. <br />
+                More informations on the{' '}
+                <a href="http://brezeliad.yorunohikage.fr">website's game</a>.
+              </p>
+            </div>
+            <div className="project pas game">
+              <h3>SamsarA</h3>
+              <p>
+                Game made in 2014 during Global Game Jam (video game making in
+                48 hours). This game is a concept in which the player moves
+                towards blindly in his memory and must guide himself to some
+                points. It was made in C++ with SFML 2.1.
+              </p>
+            </div>
+            <div className="project pas game">
+              <h3>Heart of Jump</h3>
+              <p>
+                Game made in 2013 during Global Game Jam (contest to create a
+                video game in 48 hours). This game is mixing rythm and runner
+                game. It has been made in C++ with SFML 2.0.
+              </p>
+            </div>
+            <div className="project pas website">
+              <h3>JeuxAmateurs.fr</h3>
+              <p>
+                French website about video games made by people during their
+                free time. Currently, this website is frozen but a new version
+                is coming.
+              </p>
+            </div>
+            <div className="project pas game">
+              <h3>8-Bit Robot Music Party</h3>
+              <p>
+                Game made in 2011 during highschool in a contest organised by
+                engineer school EFREI. It mixes rythm and platforms game. With
+                it, we won 3 prizes :{' '}
+                <strong>
+                  2<sup>nd</sup> place in Software
+                </strong>{' '}
+                category, <strong>Favorite</strong> prize and{' '}
+                <strong>Special</strong> prize.
+              </p>
+            </div>
+            <div className="project pas">
+              <h3>What's next ?</h3>
+              <p>
+                Interested in visual experiments and interactivity. Teach and
+                train people with things I know motivates me too!
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+
+      <section id="illustration" className="slide pam">
+        <Illustration />
       </section>
     </div>
 
@@ -258,14 +295,14 @@ const IndexPage = () => (
         >
           <p
             id="status"
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             className="txtcenter pam"
           />
           <div className="grid">
             <div className="grid3">
               <div className="small-w25">
                 <label htmlFor="name" className="pas right">
-                  Name :{" "}
+                  Name :{' '}
                 </label>
               </div>
               <div>
@@ -281,7 +318,7 @@ const IndexPage = () => (
               <p className="small-w25" id="name_status" />
               <div className="small-w25">
                 <label htmlFor="mail" className="pas right">
-                  Mail :{" "}
+                  Mail :{' '}
                 </label>
               </div>
               <div>
@@ -297,7 +334,7 @@ const IndexPage = () => (
               <p className="small-w25" id="mail_status" />
               <div className="small-w25">
                 <label htmlFor="message" className="pas right">
-                  Message :{" "}
+                  Message :{' '}
                 </label>
               </div>
               <div>
@@ -307,17 +344,14 @@ const IndexPage = () => (
                   className="pas w100"
                   placeholder="Write your message"
                   required
-                  defaultValue={""}
+                  defaultValue={''}
                 />
               </div>
               <p className="small-w25" id="message_status" />
             </div>
           </div>
           <div className="w100 txtcenter pam">
-            <button
-              className="button-white-blue"
-              type="submit"
-            >
+            <button className="button-white-blue" type="submit">
               ✉ Send
             </button>
           </div>

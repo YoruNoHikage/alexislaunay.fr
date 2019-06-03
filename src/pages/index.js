@@ -1,13 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Animation from "../components/animation"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Animation from '../components/animation'
+import Illustration from '../components/illustration'
 
-import "../css/knacss.css"
-import "../css/header.css"
-import "../css/styles.css"
+import '../css/knacss.css'
+import '../css/header.css'
+import '../css/styles.css'
 
 const IndexPage = () => (
   <Layout>
@@ -121,11 +122,11 @@ const IndexPage = () => (
           <div className="header-right-title">
             <p className="header-right-title-title">Hello,</p>
             <p className="header-right-title-subtitle">
-              Je suis <span itemProp="name">Alexis Launay</span>,{" "}
+              Je suis <span itemProp="name">Alexis Launay</span>,{' '}
               <span itemProp="jobTitle">web &amp; game developer</span>.
             </p>
             <p className="header-right-title-subtitle">
-              Je fais du web à{" "}
+              Je fais du web à{' '}
               <a className="link" href="https://inyo.me">
                 Inyo
               </a>
@@ -164,7 +165,7 @@ const IndexPage = () => (
               xmlSpace="preserve"
             >
               <path d="M36.68,0C16.457,0,0,16.454,0,36.678c0,26.153,31.386,60.164,32.724,61.597    c1.021,1.1,2.453,1.726,3.956,1.726c1.499,0,2.931-0.625,3.955-1.726c1.338-1.432,32.725-35.444,32.725-61.597    C73.359,16.453,56.903,0,36.68,0z M22.202,35.523c0-7.998,6.482-14.482,14.478-14.482c7.996,0,14.478,6.482,14.478,14.482    c0,7.996-6.481,14.478-14.478,14.478C28.685,50,22.202,43.518,22.202,35.523z" />
-            </svg>{" "}
+            </svg>{' '}
             Ochanomizu, Tokyo
           </a>
         </div>
@@ -183,8 +184,11 @@ const IndexPage = () => (
             <div className="project pas website">
               <h3>Inyo</h3>
               <p>
-                Pendant le programme d'accélération de <a href="https://www.techstars.com/programs/paris-program/">TechStars Paris</a>, nous
-                avons développé{' '}
+                Pendant le programme d'accélération de{' '}
+                <a href="https://www.techstars.com/programs/paris-program/">
+                  TechStars Paris
+                </a>
+                , nous avons développé{' '}
                 <a
                   href="https://inyo.me"
                   title="Smart Assistant pour freelances"
@@ -224,7 +228,7 @@ const IndexPage = () => (
                 . Il est fait en C++ avec la SFML 2.1. Il s'inspire du folklore
                 brétilien avec notamment les légendes de Brocéliande.
                 <br />
-                Plus d'informations sur{" "}
+                Plus d'informations sur{' '}
                 <a href="http://brezeliad.yorunohikage.fr">le site du jeu</a>.
               </p>
             </div>
@@ -250,7 +254,7 @@ const IndexPage = () => (
               <p>
                 Site web sur les jeux vidéo créés par des passionnés sur leur
                 temps libre. Actuellement, le site est gelé mais vous pouvez
-                toujours le visiter ici :{" "}
+                toujours le visiter ici :{' '}
                 <a
                   href="http://old.jeuxamateurs.fr"
                   title="JeuxAmateurs.fr - Actualité de jeux vidéo amateurs"
@@ -267,30 +271,26 @@ const IndexPage = () => (
                 l'école d'ingénieurs EFREI. Il mélange le jeu de plates-formes
                 et de rythme.
                 <br />
-                Avec ce jeu, nous avons remporté 3 prix :{" "}
+                Avec ce jeu, nous avons remporté 3 prix :{' '}
                 <strong>
                   2<sup>nde</sup> place
-                </strong>{" "}
-                dans la catégorie <strong>Software</strong>, le prix{" "}
-                <strong>Coup de Coeur</strong> and le prix{" "}
+                </strong>{' '}
+                dans la catégorie <strong>Software</strong>, le prix{' '}
+                <strong>Coup de Coeur</strong> and le prix{' '}
                 <strong>Spécial</strong>. <br />
-                Plus d'informations sur{" "}
+                Plus d'informations sur{' '}
                 <a href="https://switchcode.github.io/8-bit-robot-music-party/">
                   le site du concours
                 </a>
                 .
               </p>
             </div>
-            <div className="project pas">
-              <h3>Ensuite ?</h3>
-              <p>
-                Interessé par la création d'expériences visuelles,
-                vidéo-ludiques et interactives. Former des gens à partir de mes
-                connaissances est aussi envisageable.
-              </p>
-            </div>
           </div>
         </div>
+      </section>
+
+      <section id="illustration" className="slide pam">
+        <Illustration />
       </section>
     </div>
 
@@ -306,14 +306,14 @@ const IndexPage = () => (
         >
           <p
             id="status"
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             className="txtcenter pam"
           />
           <div className="grid">
             <div className="grid3">
               <div className="small-w25">
                 <label htmlFor="name" className="pas right">
-                  Nom :{" "}
+                  Nom :{' '}
                 </label>
               </div>
               <div>
@@ -329,7 +329,7 @@ const IndexPage = () => (
               <p className="small-w25" id="name_status" />
               <div className="small-w25">
                 <label htmlFor="mail" className="pas right">
-                  Mail :{" "}
+                  Mail :{' '}
                 </label>
               </div>
               <div>
@@ -345,7 +345,7 @@ const IndexPage = () => (
               <p className="small-w25" id="mail_status" />
               <div className="small-w25">
                 <label htmlFor="message" className="pas right">
-                  Message :{" "}
+                  Message :{' '}
                 </label>
               </div>
               <div>
@@ -355,17 +355,14 @@ const IndexPage = () => (
                   className="pas w100"
                   placeholder="Entrez votre message"
                   required
-                  defaultValue={""}
+                  defaultValue={''}
                 />
               </div>
               <p className="small-w25" id="message_status" />
             </div>
           </div>
           <div className="w100 txtcenter pam">
-            <button
-              className="button-white-blue"
-              type="submit"
-            >
+            <button className="button-white-blue" type="submit">
               ✉ Valider
             </button>
           </div>

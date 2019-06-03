@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 
-import "./animation.css"
+import './animation.css'
 
 const Animation = () => (
   <div className="anim-container">
