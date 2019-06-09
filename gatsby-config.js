@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Alexis Launay`,
     author: `@yorunohikage`,
+    baseUrl: 'https://alexislaunay.fr',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

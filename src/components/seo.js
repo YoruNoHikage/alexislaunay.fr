@@ -18,11 +18,14 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             author
+            baseUrl
           }
         }
       }
     `
   )
+
+  const locales = ['fr', 'en']
 
   return (
     <Helmet
@@ -79,6 +82,14 @@ function SEO({ description, lang, meta, title }) {
         ga('create', 'UA-70982106-1', 'auto');
         ga('send', 'pageview');`}
       </script>
+
+      {locales.map(locale => (
+        <link
+          rel="alternate"
+          href={`${site.siteMetadata.baseUrl}/${locale !== 'fr' ? locale : ''}`}
+          hrefLang={locale}
+        />
+      ))}
     </Helmet>
   )
 }
