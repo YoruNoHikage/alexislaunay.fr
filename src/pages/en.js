@@ -65,7 +65,7 @@ const IndexPage = () => (
             <img
               itemProp="image"
               className="avatar-img"
-              src="img/me.jpg"
+              src="/img/me.jpg"
               alt="Alexis Launay"
             />
           </div>
