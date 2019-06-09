@@ -10,6 +10,9 @@ import '../css/knacss.css'
 import '../css/header.css'
 import '../css/styles.css'
 
+import video from '../videos/ochanomizu.mp4'
+import poster from '../images/background.jpg'
+
 const IndexPage = () => (
   <Layout>
     <SEO
@@ -25,7 +28,9 @@ const IndexPage = () => (
     />
     <header className="header">
       <div className="header-background">
-        <div className="header-mask" />
+        <video className="header-video" autoPlay muted loop poster={poster}>
+          <source src={video} type="video/mp4" />
+        </video>
       </div>
 
       <div id="header" role="banner" className="line w100">
@@ -166,7 +171,15 @@ const IndexPage = () => (
               <path d="M36.68,0C16.457,0,0,16.454,0,36.678c0,26.153,31.386,60.164,32.724,61.597    c1.021,1.1,2.453,1.726,3.956,1.726c1.499,0,2.931-0.625,3.955-1.726c1.338-1.432,32.725-35.444,32.725-61.597    C73.359,16.453,56.903,0,36.68,0z M22.202,35.523c0-7.998,6.482-14.482,14.478-14.482c7.996,0,14.478,6.482,14.478,14.482    c0,7.996-6.481,14.478-14.478,14.478C28.685,50,22.202,43.518,22.202,35.523z" />
             </svg>{' '}
             Ochanomizu, Tokyo
+          </a>{' '}
+          (
+          <a
+            className="link"
+            href="https://www.youtube.com/watch?v=WGOwK4CxI3o"
+          >
+            video source
           </a>
+          )
         </div>
       </div>
     </header>
