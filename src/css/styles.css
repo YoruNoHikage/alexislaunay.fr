@@ -319,5 +319,39 @@ h3 {
 
 #illustration {
   background: #eee;
-  color: #fff;
+  color: #333;
+  min-height: 0;
+}
+
+.illustration-section-content {
+  display: flex;
+  place-items: center;
+}
+
+.illustration-section-caption {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.illustration-section-caption-text {
+  font-size: 2rem;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+.illustration-section-container {
+  flex: 2;
+}
+
+@media (max-width: 640px) {
+  .illustration-section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 940px) {
+  .illustration-section-caption-text {
+    font-size: 1rem;
+  }
 }

@@ -187,7 +187,7 @@ const IndexPage = () => (
     </header>
 
     <div id="main" role="main" className="line">
-      <section id="experiences" className="slide pam">
+      <section id="experiences" className="slide pal">
         <h2>Expériences</h2>
         <ul id="legends">
           <li className="game">Jeux</li>
@@ -303,13 +303,25 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="illustration" className="slide pam">
-        <Illustration />
+      <section id="illustration" className="slide pal">
+        <div className="illustration-section-content">
+          <div className="illustration-section-caption pal">
+            <h2>Et ensuite ?</h2>
+            <p className="illustration-section-caption-text">
+              Une vie est faite d'expérimentations.
+              <br />
+              Essayons d'en faire le maximum !
+            </p>
+          </div>
+          <div className="illustration-section-container pal">
+            <Illustration />
+          </div>
+        </div>
       </section>
     </div>
 
     <footer id="footer" role="contentinfo" className="line">
-      <section id="get-in-touch" className="slide pam">
+      <section id="get-in-touch" className="slide pal">
         <h2>Contact</h2>
 
         <form

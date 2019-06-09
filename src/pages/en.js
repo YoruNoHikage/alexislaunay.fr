@@ -31,6 +31,7 @@ const IndexPage = () => (
         <video className="header-video" autoPlay muted loop poster={poster}>
           <source src={video} type="video/mp4" />
         </video>
+        <div className="header-mask" />
       </div>
 
       <div id="header" role="banner" className="line w100">
@@ -185,7 +186,7 @@ const IndexPage = () => (
     </header>
 
     <div id="main" role="main" className="line">
-      <section id="experiences" className="slide pam">
+      <section id="experiences" className="slide pal">
         <h2>Expériences</h2>
         <ul id="legends">
           <li className="game">Games</li>
@@ -291,13 +292,25 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="illustration" className="slide pam">
-        <Illustration />
+      <section id="illustration" className="slide pal">
+        <div className="illustration-section-content">
+          <div className="illustration-section-caption pal">
+            <h2>Next ?</h2>
+            <p className="illustration-section-caption-text">
+              A life is made with experiments.
+              <br />
+              Let's try to make it count !
+            </p>
+          </div>
+          <div className="illustration-section-container pal">
+            <Illustration />
+          </div>
+        </div>
       </section>
     </div>
 
     <footer id="footer" role="contentinfo" className="line">
-      <section id="get-in-touch" className="slide pam">
+      <section id="get-in-touch" className="slide pal">
         <h2>Contact</h2>
 
         <form
