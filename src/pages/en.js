@@ -175,8 +175,8 @@ const IndexPage = () => (
       <section id="experiences" className="slide pam">
         <h2>Expériences</h2>
         <ul id="legends">
-          <li className="game">Jeux</li>
-          <li className="website">Sites web</li>
+          <li className="game">Games</li>
+          <li className="website">Websites</li>
         </ul>
         <div className="grid">
           <div id="projects" className="grid3">
