@@ -73,8 +73,11 @@ function SEO({ description, lang, meta, title }) {
 
       {locales.map(locale => (
         <link
+          key={locale}
           rel="alternate"
-          href={`${site.siteMetadata.siteUrl}/${locale !== 'fr' ? locale + '/' : ''}`}
+          href={`${site.siteMetadata.siteUrl}/${
+            locale !== 'fr' ? locale + '/' : ''
+          }`}
           hrefLang={locale}
         />
       ))}
