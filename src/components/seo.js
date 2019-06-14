@@ -18,7 +18,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             author
-            baseUrl
+            siteUrl
           }
         }
       }
@@ -86,7 +86,7 @@ function SEO({ description, lang, meta, title }) {
       {locales.map(locale => (
         <link
           rel="alternate"
-          href={`${site.siteMetadata.baseUrl}/${locale !== 'fr' ? locale + '/' : ''}`}
+          href={`${site.siteMetadata.siteUrl}/${locale !== 'fr' ? locale + '/' : ''}`}
           hrefLang={locale}
         />
       ))}
