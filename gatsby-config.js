@@ -39,6 +39,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-70982106-1",
+        head: false,
+        anonymize: false,
+        respectDNT: false,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
