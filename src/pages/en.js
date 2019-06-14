@@ -46,10 +46,28 @@ const IndexPage = () => (
         <nav id="navigation" role="navigation">
           <ul>
             <li>
-              <a href="#experiences">Experiences</a>
+              <a
+                href="#experiences"
+                onClick={e =>
+                  document
+                    .querySelector('#experiences')
+                    .scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                Experiences
+              </a>
             </li>
             <li>
-              <a href="#get-in-touch">Get in touch</a>
+              <a
+                href="#get-in-touch"
+                onClick={e =>
+                  document
+                    .querySelector('#get-in-touch')
+                    .scrollIntoView({ behavior: 'smooth' })
+                }
+              >
+                Get in touch
+              </a>
             </li>
           </ul>
         </nav>
