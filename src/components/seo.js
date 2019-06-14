@@ -69,9 +69,6 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <script src="https://code.jquery.com/jquery-1.10.2.min.js" />
-      <script src="/js/jquery-scrollspy.js" />
-      <script src="/js/navigation.js" />
       <script src="/js/form.js" />
 
       {locales.map(locale => (
