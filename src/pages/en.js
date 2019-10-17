@@ -157,10 +157,10 @@ const IndexPage = () => (
             </p>
           </div>
           <div className="header-right-buttons">
-            <a href="book.pdf" className="button" content="noindex">
+            <a href="book.pdf" className="button" rel="nofollow">
               Portfolio / Book
             </a>
-            <a href="cv.pdf" className="button" content="noindex">
+            <a href="cv.pdf" className="button" rel="nofollow">
               CV
             </a>
           </div>
