@@ -41,7 +41,7 @@ const IndexPage = () => (
           </Link>
         </h1>
         <div className="inbl languages">
-          <Link to="/">FR</Link> | <Link to="/en">EN</Link>
+          <Link to="/">FR</Link> | <Link to="/en">EN</Link> | <Link to="/ja">日本語</Link>
         </div>
         <nav id="navigation" role="navigation">
           <ul>
@@ -241,12 +241,12 @@ const IndexPage = () => (
                   Prototypo
                 </a>
                 . It's a typedesign tool that can help you build the font you
-                want et the technology behind enables us to showcase interactive
+                want and the technology behind enables us to showcase interactive
                 visual experiments.
               </p>
             </div>
             <div className="project pas game">
-              <h3>Brezeliad : A Tale of Brocéliande</h3>
+              <h3>Brezeliad: A Tale of Brocéliande</h3>
               <p>
                 It has been promoted in{' '}
                 <a

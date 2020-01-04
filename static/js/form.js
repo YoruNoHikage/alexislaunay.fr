@@ -21,6 +21,19 @@ window.onload = function() {
                 tooShort: 'Le texte est trop court',
             };
             break;
+        case 'ja':
+            text = {
+                sent: function() {
+                    return 'メッセージが首尾良く送られました！';
+                },
+                notSent: function(response, status) {
+                    return '送信エラー。SNSで連絡してください。';
+                },
+                valid: 'OK',
+                invalidMail: "メールアドレスは欠缺です。",
+                tooShort: 'メッセージは短すぎます。',
+            };
+            break;
         default:
             text = {
                 sent: function() {

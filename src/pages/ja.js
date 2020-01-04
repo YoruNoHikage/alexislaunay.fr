@@ -16,9 +16,9 @@ import poster from '../images/background.jpg'
 const IndexPage = () => (
   <Layout>
     <SEO
-      lang="fr"
-      title="Développeur web"
-      description="Je fais des applications web et le reste du temps, j'aide à l'organisation d'événements sur le jeu vidéo, je rédige des articles de blog, je joue du pop punk et je vais à des concerts... entre autres."
+      lang="ja"
+      title="アレクシ・ロネ、ウェブデベロッパー"
+      description="ウェブアプリを作っています。残る時間で、ビデオゲームのイベントの準備を手伝いますし、ブログの記事を書きますし、ポップパンクの曲も弾きますし、ライブにも行きますし。"
       meta={[
         {
           name: `og:image`,
@@ -26,7 +26,6 @@ const IndexPage = () => (
         },
       ]}
     />
-
     <header className="header">
       <div className="header-background">
         <video className="header-video" autoPlay muted loop poster={poster}>
@@ -37,7 +36,7 @@ const IndexPage = () => (
 
       <div id="header" role="banner" className="line w100">
         <h1 className="inbl">
-          <Link to="/" rel="author">
+          <Link to="/" rel="author" title="アレクシ・ロネ">
             Alexis Launay
           </Link>
         </h1>
@@ -55,7 +54,7 @@ const IndexPage = () => (
                     .scrollIntoView({ behavior: 'smooth' })
                 }
               >
-                Expériences
+                経験
               </a>
             </li>
             <li>
@@ -67,7 +66,7 @@ const IndexPage = () => (
                     .scrollIntoView({ behavior: 'smooth' })
                 }
               >
-                Contact
+                連絡
               </a>
             </li>
           </ul>
@@ -84,7 +83,7 @@ const IndexPage = () => (
             <img
               itemProp="image"
               className="avatar-img"
-              src="img/me.jpg"
+              src="/img/me.jpg"
               alt="Alexis Launay"
             />
           </div>
@@ -144,25 +143,23 @@ const IndexPage = () => (
         </div>
         <div className="header-right">
           <div className="header-right-title">
-            <p className="header-right-title-title">Hello,</p>
+            <p className="header-right-title-title">ボンジュール</p>
             <p className="header-right-title-subtitle">
-              Je suis <span itemProp="name">Alexis Launay</span>,{' '}
-              <span itemProp="jobTitle">web &amp; game developer</span>.
+              <span itemProp="jobTitle">ウェブやゲームデベロッパー</span>の<span itemProp="name">Alexis Launay</span>（アレクシ・ロネ）です。
             </p>
             <p className="header-right-title-subtitle">
-              Je fais du web à{' '}
               <a className="link" href="https://inyo.me">
-                Inyo
+                Inyo会社
               </a>
-              .
+              にウェブのものを開発しています。
             </p>
           </div>
           <div className="header-right-buttons">
             <a href="book.pdf" className="button" rel="nofollow">
-              Portfolio / Book
+              ポートフォリオ
             </a>
-            <a href="cv_fr.pdf" className="button" rel="nofollow">
-              CV
+            <a href="cv.pdf" className="button" rel="nofollow">
+              履歴書
             </a>
           </div>
         </div>
@@ -190,14 +187,14 @@ const IndexPage = () => (
             >
               <path d="M36.68,0C16.457,0,0,16.454,0,36.678c0,26.153,31.386,60.164,32.724,61.597    c1.021,1.1,2.453,1.726,3.956,1.726c1.499,0,2.931-0.625,3.955-1.726c1.338-1.432,32.725-35.444,32.725-61.597    C73.359,16.453,56.903,0,36.68,0z M22.202,35.523c0-7.998,6.482-14.482,14.478-14.482c7.996,0,14.478,6.482,14.478,14.482    c0,7.996-6.481,14.478-14.478,14.478C28.685,50,22.202,43.518,22.202,35.523z" />
             </svg>{' '}
-            Ochanomizu, Tokyo
+            御茶ノ水、東京
           </a>{' '}
           (
           <a
             className="link"
             href="https://www.youtube.com/watch?v=WGOwK4CxI3o"
           >
-            source de la vidéo
+            動画元
           </a>
           )
         </div>
@@ -206,115 +203,86 @@ const IndexPage = () => (
 
     <div id="main" role="main" className="line">
       <section id="experiences" className="slide pal">
-        <h2>Expériences</h2>
+        <h2>経験</h2>
         <ul id="legends">
-          <li className="game">Jeux</li>
-          <li className="website">Sites web</li>
+          <li className="game">ゲーム</li>
+          <li className="website">ウェブサイト</li>
         </ul>
         <div className="grid">
           <div id="projects" className="grid3">
             <div className="project pas website">
-              <h3>Inyo</h3>
+              <h3 title="イニョ">Inyo</h3>
               <p>
-                Pendant le programme d'accélération de{' '}
                 <a href="https://www.techstars.com/programs/paris-program/">
                   TechStars Paris
-                </a>
-                , nous avons développé{' '}
+                </a>っていうスタートアップアクセレーター中に、
                 <a
                   href="https://inyo.me"
-                  title="Smart Assistant pour freelances"
+                  title="Smart Assistant for freelancers"
                 >
                   Inyo
-                </a>
-                . Il s'agit d'un outil pour faciliter la relation entre le
-                freelance et son client.
+                </a>をチームで作りました。
+                . フリランサーと客のコミュニケーションをよくなるための道具です。
               </p>
             </div>
             <div className="project pas website">
-              <h3>Prototypo</h3>
+              <h3 title="プロトティポ">Prototypo</h3>
               <p>
-                Toujours proche du milieu graphique, j'ai travaillé sur le
-                produit{' '}
+                デザインのことがずっと気になってたので、
                 <a
                   href="https://prototypo.io"
-                  title="Créer vos propres typographies facilement"
+                  title="Create easily your own typefaces"
                 >
                   Prototypo
-                </a>
-                . Il s'agit d'un outil d'aide à la création typographique et la
-                technologie nous permet également de proposer des expériences
-                visuelles interactives.
+                </a>に開発したかって、会社にインターンシップをして、入院しました。
+                . 自分がほしいのカストムフォントを作るためのタイプデザインの道具です。その上に、テクノロジーの別の用途で視覚実験を披露する事ができます。
               </p>
             </div>
             <div className="project pas game">
-              <h3>Brezeliad : A Tale of Brocéliande</h3>
+              <h3 title="ブレゼリアッド︰え・テイル・オブ・ブロせリアンド">Brezeliad: A Tale of Brocéliande</h3>
               <p>
-                Jeu présenté lors du
                 <a
                   href="http://stunfest.fr"
-                  title="Festival de jeu vidéo à Rennes"
+                  title="Video games festival in Rennes, France"
                 >
                   Stunfest 2014
-                </a>
-                . Il est fait en C++ avec la SFML 2.1. Il s'inspire du folklore
-                brétilien avec notamment les légendes de Brocéliande.
-                <br />
-                Plus d'informations sur{' '}
-                <a href="http://brezeliad.yorunohikage.fr">le site du jeu</a>.
+                </a>っていうゲームイベントで紹介したゲームです。SFML 2.1を使ってC++で作られました。実家の周りの歴史から触発されました。<br />
+                <a href="http://brezeliad.yorunohikage.fr">ゲームのウェブサイト</a>でもっと情報があります。
               </p>
             </div>
             <div className="project pas game">
-              <h3>SamsarA</h3>
+              <h3 title="サムサラ">SamsarA</h3>
               <p>
-                Jeu créé en 2014 pendant la Global Game Jam (événement de
-                création de jeux vidéo en 48 heures). Ce jeu est un concept dans
-                lequel le joueur avance à l'aveugle dans sa mémoire et doit se
-                diriger vers certains points. Il a été fait en C++ avec la SFML
-                2.1.
+                Global Game Jamっていう４８時間でゲームを作るイベントで２０１４年に作れました。このゲームとは、道が見えないで進んだら、記憶が見つけるコンセプトです。SFML 2.1を使ってC++で作られました。
               </p>
             </div>
             <div className="project pas game">
-              <h3>Heart of Jump</h3>
+              <h3 title="ハート・オブ・ジャンプ">Heart of Jump</h3>
               <p>
-                Jeu créé en 2013 pendant la Global Game Jam. Ce jeu mélange le
-                rythme et le "runner". Il a été fait en C++ avec la SFML 2.0.
+              Global Game Jamっていう４８時間でゲームを作るイベントで２０１３年に作れました。リズムとラナーゲームの混合です。SFML 2.0を使ってC++で作られました。
               </p>
             </div>
             <div className="project pas website">
-              <h3>JeuxAmateurs.fr</h3>
+              <h3 title="ジュ・アマツール">JeuxAmateurs.fr</h3>
               <p>
-                Site web sur les jeux vidéo créés par des passionnés sur leur
-                temps libre. Actuellement, le site est gelé mais vous pouvez
-                toujours le visiter ici :{' '}
-                <a
-                  href="http://old.jeuxamateurs.fr"
-                  title="JeuxAmateurs.fr - Actualité de jeux vidéo amateurs"
-                >
-                  old.jeuxamateurs.fr
-                </a>
-                .
+                フランス語でのインターネットの人が自分の暇なときに開発したゲームのウェブサイトでした。
+                開発や記事や動画でボロンティーアのチームで最初から作りました。
               </p>
             </div>
             <div className="project pas game">
-              <h3>8-Bit Robot Music Party</h3>
+              <h3 title="ウイビット・ロボット・ムジック・パーティ">8-Bit Robot Music Party</h3>
               <p>
-                Jeu fait en 2011 pendant le lycée pour un concours organisé par
-                l'école d'ingénieurs EFREI. Il mélange le jeu de plates-formes
-                et de rythme.
-                <br />
-                Avec ce jeu, nous avons remporté 3 prix :{' '}
+                高校中で２０１１年にフランスのエンジニアスクールからのコンテストを参加するために作ったゲームです。リズムとプラットフォームのゲームの混合です。3賞を取ることができました。
                 <strong>
-                  2<sup>nde</sup> place
-                </strong>{' '}
-                dans la catégorie <strong>Software</strong>, le prix{' '}
-                <strong>Coup de Coeur</strong> and le prix{' '}
-                <strong>Spécial</strong>. <br />
-                Plus d'informations sur{' '}
-                <a href="https://switchcode.github.io/8-bit-robot-music-party/">
-                  le site du concours
-                </a>
-                .
+                  ソフトウェア派で2位
+                </strong>、<strong>お気に入り</strong>賞、
+                <strong>特別</strong>賞。
+              </p>
+            </div>
+            <div className="project pas">
+              <h3>次は？</h3>
+              <p>
+                視覚実験やインタラクティビティーの興味があります。僕が知ってることで人を教える意欲も強いです！
               </p>
             </div>
           </div>
@@ -324,11 +292,11 @@ const IndexPage = () => (
       <section id="illustration" className="slide pal">
         <div className="illustration-section-content">
           <div className="illustration-section-caption pal">
-            <h2>Et ensuite ?</h2>
+            <h2>次は？</h2>
             <p className="illustration-section-caption-text">
-              Une vie est faite d'expérimentations.
+              人生は色な危険で生きます。
               <br />
-              Essayons d'en faire le maximum !
+              楽しんでみましょうよ！
             </p>
           </div>
           <div className="illustration-section-container pal">
@@ -340,7 +308,7 @@ const IndexPage = () => (
 
     <footer id="footer" role="contentinfo" className="line">
       <section id="get-in-touch" className="slide pal">
-        <h2>Contact</h2>
+        <h2>連絡</h2>
 
         <form
           className="small-w100"
@@ -357,7 +325,7 @@ const IndexPage = () => (
             <div className="grid3">
               <div className="small-w25">
                 <label htmlFor="name" className="pas right">
-                  Nom :{' '}
+                  名前
                 </label>
               </div>
               <div>
@@ -366,14 +334,14 @@ const IndexPage = () => (
                   id="name"
                   name="name"
                   className="pas w100"
-                  placeholder="Entrez un nom"
+                  placeholder="名前をここに書いてください"
                   required
                 />
               </div>
               <p className="small-w25" id="name_status" />
               <div className="small-w25">
                 <label htmlFor="mail" className="pas right">
-                  Mail :{' '}
+                  メール
                 </label>
               </div>
               <div>
@@ -382,14 +350,14 @@ const IndexPage = () => (
                   id="mail"
                   name="mail"
                   className="pas w100"
-                  placeholder="Entrez votre adresse mail"
+                  placeholder="メールをここに書いてください"
                   required
                 />
               </div>
               <p className="small-w25" id="mail_status" />
               <div className="small-w25">
                 <label htmlFor="message" className="pas right">
-                  Message :{' '}
+                  メッセージ
                 </label>
               </div>
               <div>
@@ -397,7 +365,7 @@ const IndexPage = () => (
                   id="message"
                   name="message"
                   className="pas w100"
-                  placeholder="Entrez votre message"
+                  placeholder="メッセージをここに書いてください"
                   required
                   defaultValue={''}
                 />
@@ -407,7 +375,7 @@ const IndexPage = () => (
           </div>
           <div className="w100 txtcenter pam">
             <button className="button-white-blue" type="submit">
-              ✉ Valider
+              ✉ 送る
             </button>
           </div>
         </form>
