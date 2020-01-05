@@ -18,7 +18,7 @@ const IndexPage = () => (
     <SEO
       lang="ja"
       title="アレクシ・ロネ、ウェブデベロッパー"
-      description="ウェブアプリを作っています。残る時間で、ビデオゲームのイベントの準備を手伝いますし、ブログの記事を書きますし、ポップパンクの曲も弾きますし、ライブにも行きますし。"
+      description="ウェブアプリを日常に作っています。残る時間で、ビデオゲームのイベントの準備を手伝いますし、ブログの記事を書きますし、ポップパンクの曲も弾きますし、ライブにも行きますし。"
       meta={[
         {
           name: `og:image`,
@@ -215,27 +215,27 @@ const IndexPage = () => (
               <p>
                 <a href="https://www.techstars.com/programs/paris-program/">
                   TechStars Paris
-                </a>っていうスタートアップアクセレーター中に、
+                </a>というスタートアップアクセレーター中に、
                 <a
                   href="https://inyo.me"
                   title="Smart Assistant for freelancers"
                 >
                   Inyo
                 </a>をチームで作りました。
-                . フリランサーと客のコミュニケーションをよくなるための道具です。
+                . フリーライターと顧客のコミュニケーションをよくなるための道具です。
               </p>
             </div>
             <div className="project pas website">
               <h3 title="プロトティポ">Prototypo</h3>
               <p>
-                デザインのことがずっと気になってたので、
+                デザインのことがずっと気になっていて、
                 <a
                   href="https://prototypo.io"
                   title="Create easily your own typefaces"
                 >
                   Prototypo
-                </a>に開発したかって、会社にインターンシップをして、入院しました。
-                . 自分がほしいのカストムフォントを作るためのタイプデザインの道具です。その上に、テクノロジーの別の用途で視覚実験を披露する事ができます。
+                </a>を開発したかったので、会社にインターンシップをして、入社しました。
+                . 自分がほしいカストムフォントを作るためのタイプデザインの道具です。その上、テクノロジーの別の用途で視覚実験を披露する事ができます。
               </p>
             </div>
             <div className="project pas game">
@@ -246,14 +246,14 @@ const IndexPage = () => (
                   title="Video games festival in Rennes, France"
                 >
                   Stunfest 2014
-                </a>っていうゲームイベントで紹介したゲームです。SFML 2.1を使ってC++で作られました。実家の周りの歴史から触発されました。<br />
+                </a>というゲームイベントで紹介したゲームです。SFML 2.1を使ってC++で作りました。実家の周りの歴史から触発されました。<br />
                 <a href="http://brezeliad.yorunohikage.fr">ゲームのウェブサイト</a>でもっと情報があります。
               </p>
             </div>
             <div className="project pas game">
               <h3 title="サムサラ">SamsarA</h3>
               <p>
-                Global Game Jamっていう４８時間でゲームを作るイベントで２０１４年に作れました。このゲームとは、道が見えないで進んだら、記憶が見つけるコンセプトです。SFML 2.1を使ってC++で作られました。
+                Global Game Jamという４８時間でゲームを作るイベントで２０１４年に作りました。このゲームとは、見えない道を進んで、記憶を見つけるというコンセプトです。SFML 2.1を使ってC++で作られました。
               </p>
             </div>
             <div className="project pas game">
@@ -265,16 +265,16 @@ const IndexPage = () => (
             <div className="project pas website">
               <h3 title="ジュ・アマツール">JeuxAmateurs.fr</h3>
               <p>
-                フランス語でのインターネットの人が自分の暇なときに開発したゲームのウェブサイトでした。
-                開発や記事や動画でボロンティーアのチームで最初から作りました。
+                インターネットの人が自分の暇なときに開発したゲームについてフランス語のウェブサイトでした。
+                開発や記事や動画でボランティアのチームで最初から作りました。
               </p>
             </div>
             <div className="project pas game">
               <h3 title="ウイビット・ロボット・ムジック・パーティ">8-Bit Robot Music Party</h3>
               <p>
-                高校中で２０１１年にフランスのエンジニアスクールからのコンテストを参加するために作ったゲームです。リズムとプラットフォームのゲームの混合です。3賞を取ることができました。
+                高校生の時、２０１１年にフランスのエンジニアスクールからのコンテストに参加するために作ったゲームです。リズムとプラットフォームのゲームの混合です。３つの賞を取ることができました。
                 <strong>
-                  ソフトウェア派で2位
+                  ソフトウェア派で２位
                 </strong>、<strong>お気に入り</strong>賞、
                 <strong>特別</strong>賞。
               </p>
@@ -282,7 +282,7 @@ const IndexPage = () => (
             <div className="project pas">
               <h3>次は？</h3>
               <p>
-                視覚実験やインタラクティビティーの興味があります。僕が知ってることで人を教える意欲も強いです！
+                視覚実験やインタラクティビティーに興味があります。僕が知ってることを人に教える意欲も強いです！
               </p>
             </div>
           </div>
@@ -294,7 +294,7 @@ const IndexPage = () => (
           <div className="illustration-section-caption pal">
             <h2>次は？</h2>
             <p className="illustration-section-caption-text">
-              人生は色な危険で生きます。
+              人生は実験でできています。
               <br />
               楽しんでみましょうよ！
             </p>
