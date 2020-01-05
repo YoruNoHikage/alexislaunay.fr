@@ -18,7 +18,7 @@ const IndexPage = () => (
     <SEO
       lang="ja"
       title="アレクシ・ロネ、ウェブデベロッパー"
-      description="ウェブアプリを日常に作っています。残る時間で、ビデオゲームのイベントの準備を手伝いますし、ブログの記事を書きますし、ポップパンクの曲も弾きますし、ライブにも行きますし。"
+      description="ウェブアプリを日常に作っています。仕事以外の時間は、ビデオゲームのイベントの準備を手伝ったり、ブログの記事を書きます。趣味でポップパンクの曲がギターを弾いたり、ライブにもよく行きます。"
       meta={[
         {
           name: `og:image`,
@@ -222,7 +222,7 @@ const IndexPage = () => (
                 >
                   Inyo
                 </a>をチームで作りました。
-                . フリーライターと顧客のコミュニケーションをよくなるための道具です。
+                . フリーライターと顧客のコミュニケーションをよくするための道具です。
               </p>
             </div>
             <div className="project pas website">
@@ -294,7 +294,7 @@ const IndexPage = () => (
           <div className="illustration-section-caption pal">
             <h2>次は？</h2>
             <p className="illustration-section-caption-text">
-              人生は実験でできています。
+              人生は挑戦の毎日です。
               <br />
               楽しんでみましょうよ！
             </p>
