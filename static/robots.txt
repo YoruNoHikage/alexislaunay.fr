@@ -1,6 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /cv.pdf
-Disallow: /cv_fr.pdf
-Disallow: /book.pdf
-Disallow: /book_cmyk.pdf
