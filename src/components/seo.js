@@ -25,7 +25,7 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const locales = ['fr', 'en']
+  const locales = ['fr', 'en', 'ja']
 
   return (
     <Helmet
