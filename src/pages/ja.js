@@ -13,7 +13,7 @@ import '../css/styles.css'
 import video from '../videos/ochanomizu.mp4'
 import poster from '../images/background.jpg'
 
-const IndexPage = () => (
+const IndexPage = ({location}) => (
   <Layout>
     <SEO
       lang="ja"
@@ -21,10 +21,11 @@ const IndexPage = () => (
       description="ウェブアプリを日常に作っています。仕事以外の時間は、ビデオゲームのイベントの準備を手伝ったり、ブログの記事を書きます。趣味でポップパンクの曲がギターを弾いたり、ライブにもよく行きます。"
       meta={[
         {
-          name: `og:image`,
+          property: `og:image`,
           content: 'https://www.alexislaunay.fr/img/me.jpg',
         },
       ]}
+      location={location}
     />
     <header className="header">
       <div className="header-background">
