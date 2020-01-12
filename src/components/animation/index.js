@@ -7,6 +7,7 @@ const Animation = () => (
     <div className="anim-background" />
     <div className="anim-middleground" />
     <div className="anim-figure" />
+    <div className="anim-flying-potato" />
     <div className="anim-foreground" />
   </div>
 )
