@@ -152,8 +152,8 @@ const IndexPage = ({location}) => (
             </p>
             <p className="header-right-title-subtitle">
               Je fais du web à{' '}
-              <a className="link" href="https://inyo.me">
-                Inyo
+              <a className="link" href="https://malizen.com">
+                Malizen
               </a>
               .
             </p>
@@ -286,15 +286,7 @@ const IndexPage = ({location}) => (
               <h3>JeuxAmateurs.fr</h3>
               <p>
                 Site web sur les jeux vidéo créés par des passionnés sur leur
-                temps libre. Actuellement, le site est gelé mais vous pouvez
-                toujours le visiter ici :{' '}
-                <a
-                  href="http://old.jeuxamateurs.fr"
-                  title="JeuxAmateurs.fr - Actualité de jeux vidéo amateurs"
-                >
-                  old.jeuxamateurs.fr
-                </a>
-                .
+                temps libre. Le site actuel n'est pas le mien.
               </p>
             </div>
             <div className="project pas game">

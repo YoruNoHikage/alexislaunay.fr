@@ -149,8 +149,8 @@ const IndexPage = ({location}) => (
               <span itemProp="jobTitle">ウェブやゲームデベロッパー</span>の<span itemProp="name">Alexis Launay</span>（アレクシ・ロネ）です。
             </p>
             <p className="header-right-title-subtitle">
-              <a className="link" href="https://inyo.me">
-                Inyo会社
+              <a className="link" href="https://malizen.com">
+                Malizen会社
               </a>
               にウェブのものを開発しています。
             </p>
@@ -267,7 +267,7 @@ const IndexPage = ({location}) => (
               <h3 title="ジュ・アマツール">JeuxAmateurs.fr</h3>
               <p>
                 インターネットの人が自分の暇なときに開発したゲームについてフランス語のウェブサイトでした。
-                開発や記事や動画でボランティアのチームで最初から作りました。
+                開発や記事や動画でボランティアのチームで最初から作りました。現在ウェブサイトは僕のではありません。
               </p>
             </div>
             <div className="project pas game">

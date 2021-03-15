@@ -151,8 +151,8 @@ const IndexPage = ({location}) => (
             </p>
             <p className="header-right-title-subtitle">
               I do web stuff at{' '}
-              <a className="link" href="https://inyo.me">
-                Inyo
+              <a className="link" href="https://malizen.com">
+                Malizen
               </a>
               .
             </p>
@@ -283,8 +283,7 @@ const IndexPage = ({location}) => (
               <h3>JeuxAmateurs.fr</h3>
               <p>
                 French website about video games made by people during their
-                free time. Currently, this website is frozen but a new version
-                is coming.
+                free time. The current website is not mine.
               </p>
             </div>
             <div className="project pas game">
