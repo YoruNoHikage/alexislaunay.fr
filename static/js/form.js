@@ -76,6 +76,7 @@ window.onload = function() {
     
     fetch('https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf?' + queryParams.toString(), {
       method: 'GET',
+      mode: 'no-cors',
     }).then(d => {
 			status.style.display = '';
       status.innerHTML = text.sent();
