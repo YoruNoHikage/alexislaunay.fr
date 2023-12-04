@@ -71,11 +71,11 @@ window.onload = function() {
     data.append('value1', e.target.name.value);
     data.append('value2', e.target.mail.value);
     data.append('value3', nl2br(e.target.message.value));
+
+    const queryParams = new URLSearchParams(data);
     
-    fetch('https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf', {
-      method: 'POST',
-      mode: 'no-cors',
-      body: data,
+    fetch('https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf?' + queryParams.toString(), {
+      method: 'GET',
     }).then(d => {
 			status.style.display = '';
       status.innerHTML = text.sent();
