@@ -11,7 +11,7 @@ window.onload = function() {
         case 'fr':
             text = {
                 sent: function() {
-                    return 'Le message est bien envoyé !';
+                    return 'Le message est bien envoyé ! Si vous ne recevez pas de réponse dans les prochains jours, veuillez réessayer.';
                 },
                 notSent: function(response, status) {
                     return 'Erreur d\'envoi. Contactez-moi sur les réseaux sociaux.';
@@ -24,7 +24,7 @@ window.onload = function() {
         case 'ja':
             text = {
                 sent: function() {
-                    return 'メッセージが首尾良く送られました！';
+                    return 'メッセージが首尾良く送られました！返事が数日で届かなかったらもう一度送ってください。';
                 },
                 notSent: function(response, status) {
                     return '送信エラー。SNSで連絡してください。';
@@ -37,7 +37,7 @@ window.onload = function() {
         default:
             text = {
                 sent: function() {
-                    return 'Message has been sent!';
+                    return "Message has been sent! If you don't get a reply within a few days, please try again.";
                 },
                 notSent: function(response, status) {
                     return 'Error when sending. Contact me on social networks.';
@@ -54,38 +54,11 @@ window.onload = function() {
     var status = document.getElementById('status');
     status.style.display = 'none';
     
-    if (!window.fetch) {
-      e.target.action = 'https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf';
-      
-      e.target.name.name = 'value1';
-      e.target.mail.name = 'value2';
-      e.target.message.name = 'value3';
+    // TODO: check iframe status? is it possible?
 
-      return;
-    }
-    
-    e.preventDefault();
-    
-    var data = new FormData();
-    
-    data.append('value1', e.target.name.value);
-    data.append('value2', e.target.mail.value);
-    data.append('value3', nl2br(e.target.message.value));
-    
-    fetch('https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf', {
-      method: 'POST',
-      mode: 'no-cors',
-      body: data,
-    }).then(d => {
-			status.style.display = '';
-      status.innerHTML = text.sent();
-      form.reset();
-    }, e => {
-			status.style.display = '';
-      status.innerHTML = text.notSent();
-    });
-
-	};
+	status.style.display = '';
+    status.innerHTML = text.sent();
+    form.reset();
 	
 	var name = document.getElementById("name");
 	var mail = document.getElementById("mail");

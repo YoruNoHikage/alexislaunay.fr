@@ -1,33 +1,29 @@
+import { Link } from '@remix-run/react'
 import React from 'react'
-import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Animation from '../components/animation'
-import Illustration from '../components/illustration'
-
-import '../css/knacss.css'
-import '../css/header.css'
-import '../css/styles.css'
+import Animation from '../components/Animation'
+import Illustration from '../components/Illustration'
 
 import video from '../videos/ochanomizu.mp4'
 import poster from '../images/background.jpg'
 
-const IndexPage = ({location}) => (
-  <Layout>
-    <SEO
-      lang="fr"
-      title="Développeur web"
-      description="Je fais des applications web et le reste du temps, j'aide à l'organisation d'événements sur le jeu vidéo, je rédige des articles de blog, je joue du pop punk et je vais à des concerts... entre autres."
-      meta={[
-        {
-          property: `og:image`,
-          content: 'https://www.alexislaunay.fr/img/me.jpg',
-        },
-      ]}
-      location={location}
-    />
+export const meta = () => ({
+  lang: 'fr',
+  title: "Diorren web ha c'hoari video",
+  description:
+    "Fardañ a ran arload web ha amzer rest, j'aide à l'organisation darvoudoù sur le jeu vidéo, je rédige des articles de blog, je joue du pop punk et je vais à des concerts... entre autres.",
+  'og:description':
+    "Je fais des applications web et le reste du temps, j'aide à l'organisation d'événements sur le jeu vidéo, je rédige des articles de blog, je joue du pop punk et je vais à des concerts... entre autres.",
+  'og:type': 'website',
+  'og:locale': 'fr_FR',
+  'og:site_name': 'Alexis Launay',
+  'og:url': 'https://www.alexislaunay.fr/',
+  'og:image': 'https://www.alexislaunay.fr/img/me.jpg',
+  location: 'https://www.alexislaunay.fr/',
+})
 
+const IndexPage = () => (
+  <>
     <header className="header">
       <div className="header-background">
         <video className="header-video" autoPlay muted loop poster={poster}>
@@ -43,32 +39,33 @@ const IndexPage = ({location}) => (
           </Link>
         </h1>
         <div className="inbl languages">
-          <Link to="/">FR</Link> | <Link to="/en">EN</Link> | <Link to="/ja">日本語</Link>
+          <Link to="/">FR</Link> | <Link to="/en">EN</Link> |{' '}
+          <Link to="/br">BR</Link> | <Link to="/ja">日本語</Link>
         </div>
         <nav id="navigation" role="navigation">
           <ul>
             <li>
               <a
                 href="#experiences"
-                onClick={e =>
+                onClick={(e) =>
                   document
                     .querySelector('#experiences')
                     .scrollIntoView({ behavior: 'smooth' })
                 }
               >
-                Expériences
+                Skiant-prenet
               </a>
             </li>
             <li>
               <a
                 href="#get-in-touch"
-                onClick={e =>
+                onClick={(e) =>
                   document
                     .querySelector('#get-in-touch')
                     .scrollIntoView({ behavior: 'smooth' })
                 }
               >
-                Contact
+                Darempred
               </a>
             </li>
           </ul>
@@ -145,17 +142,16 @@ const IndexPage = ({location}) => (
         </div>
         <div className="header-right">
           <div className="header-right-title">
-            <p className="header-right-title-title">Hello,</p>
+            <p className="header-right-title-title">Demat,</p>
             <p className="header-right-title-subtitle">
-              Je suis <span itemProp="name">Alexis Launay</span>,{' '}
-              <span itemProp="jobTitle">web &amp; game developer</span>.
+              <span itemProp="name">Alexis Launay</span> on-me,{' '}
+              <span itemProp="jobTitle">diorren web ha c'hoari video</span>.
             </p>
             <p className="header-right-title-subtitle">
-              Je fais du web à{' '}
+              Web a ra e{' '}
               <a className="link" href="https://malizen.com">
                 Malizen
-              </a>
-              .
+              </a>.
             </p>
           </div>
           <div className="header-right-buttons">
@@ -198,7 +194,7 @@ const IndexPage = ({location}) => (
             className="link"
             href="https://www.youtube.com/watch?v=WGOwK4CxI3o"
           >
-            source de la vidéo
+            tarzh ar video
           </a>
           )
         </div>
@@ -207,10 +203,10 @@ const IndexPage = ({location}) => (
 
     <div id="main" role="main" className="line">
       <section id="experiences" className="slide pal">
-        <h2>Expériences</h2>
+        <h2>Skiant-prenet</h2>
         <ul id="legends">
-          <li className="game">Jeux</li>
-          <li className="website">Sites web</li>
+          <li className="game">C'hoarioù</li>
+          <li className="website">Lec'hioù web</li>
         </ul>
         <div className="grid">
           <div id="projects" className="grid3">
@@ -317,11 +313,11 @@ const IndexPage = ({location}) => (
       <section id="illustration" className="slide pal">
         <div className="illustration-section-content">
           <div className="illustration-section-caption pal">
-            <h2>Et ensuite ?</h2>
+            <h2>Ha goude ?</h2>
             <p className="illustration-section-caption-text">
-              Une vie est faite d'expérimentations.
+              Eus arnodoù 'neus graet ur buhez.
               <br />
-              Essayons d'en faire le maximum !
+              Ober a esaeomp ar muian ar gwellañ !
             </p>
           </div>
           <div className="illustration-section-container pal">
@@ -333,13 +329,20 @@ const IndexPage = ({location}) => (
 
     <footer id="footer" role="contentinfo" className="line">
       <section id="get-in-touch" className="slide pal">
-        <h2>Contact</h2>
+        <h2>Darempred</h2>
+
+        <iframe
+          name="hiddenredirect"
+          id="hiddenredirect"
+          style={{ display: 'none' }}
+        />
 
         <form
           className="small-w100"
           id="form_contact"
-          action="contact.php"
+          action="https://maker.ifttt.com/trigger/contact/with/key/bOTXqjYhEh9syFkwYHeTiyXPExknOacXaCHJBUG-jwf"
           method="POST"
+          target="hiddenredirect"
         >
           <p
             id="status"
@@ -350,47 +353,47 @@ const IndexPage = ({location}) => (
             <div className="grid3">
               <div className="small-w25">
                 <label htmlFor="name" className="pas right">
-                  Nom :{' '}
+                  Anv :{' '}
                 </label>
               </div>
               <div>
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="value1"
                   className="pas w100"
-                  placeholder="Entrez un nom"
+                  placeholder="Roit hoc'h anv"
                   required
                 />
               </div>
               <p className="small-w25" id="name_status" />
               <div className="small-w25">
                 <label htmlFor="mail" className="pas right">
-                  Mail :{' '}
+                  Postel :{' '}
                 </label>
               </div>
               <div>
                 <input
                   type="email"
                   id="mail"
-                  name="mail"
+                  name="value2"
                   className="pas w100"
-                  placeholder="Entrez votre adresse mail"
+                  placeholder="Roit ho chomlec'h postel"
                   required
                 />
               </div>
               <p className="small-w25" id="mail_status" />
               <div className="small-w25">
                 <label htmlFor="message" className="pas right">
-                  Message :{' '}
+                  Kemmenad :{' '}
                 </label>
               </div>
               <div>
                 <textarea
                   id="message"
-                  name="message"
+                  name="value3"
                   className="pas w100"
-                  placeholder="Entrez votre message"
+                  placeholder="Roit ho kemmenad"
                   required
                   defaultValue={''}
                 />
@@ -400,7 +403,7 @@ const IndexPage = ({location}) => (
           </div>
           <div className="w100 txtcenter pam">
             <button className="button-white-blue" type="submit">
-              ✉ Valider
+              ✉ Kas
             </button>
           </div>
         </form>
@@ -409,7 +412,7 @@ const IndexPage = ({location}) => (
         <Animation />
       </section>
     </footer>
-  </Layout>
+  </>
 )
 
 export default IndexPage

@@ -154,20 +154,18 @@ a {
 }
 
 .project {
-  background: #ccc;
-  background-clip: content-box;
+  background: url('/img/project-border.svg') no-repeat;
+  background-size: 100% 100%;
 }
 
 #projects .game,
 #legends .game {
-  background: #8be;
-  background-clip: content-box;
+  background-color: #8be;
 }
 
 #projects .website,
 #legends .website {
-  background: #be2;
-  background-clip: content-box;
+  background-color: #be2;
 }
 
 #legends > * {
